@@ -18,6 +18,7 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     --command-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --footer-mailbox-border: rgba(255, 255, 255, 0.3);
     --gradient-overlay-color: rgba(47, 48, 58, 0.4);
     --portfolio-projects-overlay: rgba(33, 150, 243, 0.9);
     --dark-social-bg: rgba(255, 255, 255, 0.1);
@@ -513,7 +514,7 @@ img {
 }
 
 .physical-address {
-    width: 227px;
+    width: 231px;
     display: inline-block;
     color: var(--primary-light-color);
 }
@@ -558,33 +559,30 @@ img {
 }
 
 .mail-box {
+    display: flex;
     width: 358px;
     height: 50px;
     padding: 16px 15px;
     margin-right: 12px;
     font-size: 16px;
     line-height: calc(16/20);
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--footer-link-color);
+    border: 1px solid var(--footer-mailbox-border);
     border-radius: 4px;
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
 }
-
-/* 
-.mail-box:focus {
-    border-color: rgba(255, 255, 255, 0.3);
-}
- */
 
  .footer-box .subscription-button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
     min-width: 200px;
     gap: 10px;
     padding: 10px 28px;
+ }
 
+ .subscription-wrapper {
+    display: flex;
  }
 
 /* Portfolio */

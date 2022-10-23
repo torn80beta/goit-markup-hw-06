@@ -541,22 +541,23 @@
           </ul>
         </div>
         <div class="footer-box form">
-          <p></p>
           <form autocomplete="off" method="POST" action="javascript:void(0);">
             <label class="mail-label" for="subscription">Підпишіться на розсилку</label>
-            <input
-              class="mail-box"
-              type="email"
-              id="subscription"
-              name="mail"
-              placeholder="E-mail"
-            />
-            <button class="button subscription-button" type="submit">
-              Підписатися
-              <svg height="24" width="24">
-                <use href="./images/icons.svg#subscription"></use>
-              </svg>
-            </button>
+            <div class="subscription-wrapper">
+              <input
+                class="mail-box"
+                type="email"
+                id="subscription"
+                name="mail"
+                placeholder="E-mail"
+              />
+              <button class="button subscription-button" type="submit">
+                Підписатися
+                <svg height="24" width="24">
+                  <use href="./images/icons.svg#subscription"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
