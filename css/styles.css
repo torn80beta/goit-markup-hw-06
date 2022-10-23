@@ -749,6 +749,11 @@ img {
     border: 1px solid var(--close-button-border);
     border-radius: 50%;
     cursor: pointer;
+    fill: var(--black-color);
+}
+
+.close-button:hover {
+    fill: var(--accent-color);
 }
 
 .easter-egg {
