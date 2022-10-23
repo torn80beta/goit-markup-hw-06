@@ -571,9 +571,39 @@
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
+        <div class="form-wrapper">
+          <form autocomplete="off" method="POST" action="javascript:void(0);">
+            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <label for="name">
+              Ім'я
+              <input class="input-box" type="text" name="name" />
+            </label>
+            <label for="phone">
+              Телефон
+              <input class="input-box" type="tel" name="phone" />
+            </label>
+            <label for="mail">
+              Пошта
+              <input class="input-box" type="email" name="mail" />
+            </label>
+            <label for="comment">
+              Коментар
+              <input class="input-box comment" type="textarea" name="comment" />
+            </label>
+            <div class="agreement">
+              <label for="">
+                <input type="checkbox" />
+                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+              </label>
+              <button class="button subscription-button" type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
+        <!-- 
         <video class="easter-egg" width="300" autoplay preload="auto">
           <source src="./images/cat.mp4" type="video/mp4" />
         </video>
+         -->
       </div>
     </div>
 
