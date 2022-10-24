@@ -30,7 +30,7 @@
           <ul class="site-nav list">
             <li class="item"><a class="link current" href="./index.html">Студія</a></li>
             <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+            <li class="item"><a class="link" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
@@ -574,36 +574,50 @@
         <div class="form-wrapper">
           <form autocomplete="off" method="POST" action="javascript:void(0);">
             <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <label for="name">
-              Ім'я
+            <label class="form-label" for="name">Ім'я</label>
+            <div class="form-field">
               <input class="input-box" type="text" name="name" />
-            </label>
-            <label for="phone">
-              Телефон
-              <input class="input-box" type="tel" name="phone" />
-            </label>
-            <label for="mail">
-              Пошта
-              <input class="input-box" type="email" name="mail" />
-            </label>
-            <label for="comment">
-              Коментар
-              <input class="input-box comment" type="textarea" name="comment" />
-            </label>
-            <div class="agreement">
-              <label for="">
-                <input type="checkbox" />
-                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-              </label>
-              <button class="button subscription-button" type="submit">Відправити</button>
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
             </div>
+            <label class="form-label" for="phone">Телефон</label>
+            <div class="form-field">
+              <input class="input-box" type="tel" name="phone" />
+              <svg class="form-icon" width="14" height="14">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="mail">Пошта</label>
+            <div class="form-field">
+              <input class="input-box" type="email" name="mail" />
+              <svg class="form-icon" width="16" height="12">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="comment">Коментар</label>
+            <div class="form-field">
+              <textarea
+                class="input-box comment"
+                name="comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="agreement">
+              <label class="form-label license">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="license"
+                  value="agreed"
+                />
+                <span class="checkbox-icon"></span>
+                Погоджуюся з розсилкою та приймаю <a class="policy" href="">Умови договору</a>
+              </label>
+            </div>
+            <button class="button subscription-button" type="submit">Відправити</button>
           </form>
         </div>
-        <!-- 
-        <video class="easter-egg" width="300" autoplay preload="auto">
-          <source src="./images/cat.mp4" type="video/mp4" />
-        </video>
-         -->
       </div>
     </div>
 
