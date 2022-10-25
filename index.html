@@ -581,21 +581,21 @@
             <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
             <label class="form-label" for="name">Ім'я</label>
             <div class="form-field">
-              <input class="input-box" type="text" name="name" />
+              <input class="input-box" type="text" name="name" id="name" />
               <svg class="form-icon" width="12" height="12">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </div>
             <label class="form-label" for="phone">Телефон</label>
             <div class="form-field">
-              <input class="input-box" type="tel" name="phone" />
+              <input class="input-box" type="tel" name="phone" id="phone" />
               <svg class="form-icon" width="14" height="14">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
             <label class="form-label" for="mail">Пошта</label>
             <div class="form-field">
-              <input class="input-box" type="email" name="mail" />
+              <input class="input-box" type="email" name="mail" id="mail" />
               <svg class="form-icon" width="16" height="12">
                 <use href="./images/icons.svg#email"></use>
               </svg>
@@ -605,15 +605,17 @@
               <textarea
                 class="input-box comment"
                 name="comment"
+                id="comment"
                 placeholder="Введіть текст"
               ></textarea>
             </div>
             <div class="agreement">
-              <label class="form-label license">
+              <label class="form-label license" for="license">
                 <input
                   class="checkbox visually-hidden"
                   type="checkbox"
                   name="license"
+                  id="license"
                   value="agreed"
                 />
                 <span class="checkbox-icon"></span>
