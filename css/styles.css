@@ -680,7 +680,7 @@ img {
 }
 
 .project-link:hover .project-overlay,
- .project-link:focus .project-overlay {
+.project-link:focus .project-overlay {
      transform: translateY(0)
  }
 
@@ -811,6 +811,7 @@ img {
     height: 40px;
     border: 1px solid var(--input-box-border);
     border-radius: 4px;
+    transition: border 250ms var(--cubic-bezier-transition);
 }
 
 .input-box:focus-within {
@@ -841,6 +842,7 @@ img {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
+    transition: fill 250ms var(--cubic-bezier-transition);
 }
 
 .checkbox-icon {
