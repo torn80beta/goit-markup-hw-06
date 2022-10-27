@@ -856,6 +856,10 @@ img {
     border-radius: 2px;
 }
 
+.checkbox:focus + .checkbox-icon {
+    outline: 1px solid var(--accent-color);
+}
+
 .checkbox:checked  + .checkbox-icon {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
