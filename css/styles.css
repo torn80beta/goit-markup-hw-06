@@ -781,13 +781,6 @@ img {
     color: var(--primary-text-color);
 }
 
-.license {
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-
 .modal .button {
     display: block;
     min-width: 200px;
@@ -867,9 +860,18 @@ img {
 .agreement {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+}
+
+.license {
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
 .policy {
